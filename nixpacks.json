@@ -1,0 +1,7 @@
+{
+  "providers": ["php"],
+  "nixPkgs": [
+    "php83",
+    "php83Extensions.gd"
+  ]
+}

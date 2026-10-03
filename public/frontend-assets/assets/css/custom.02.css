@@ -1,0 +1,379 @@
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .swiper-slide {
+    width: auto;
+    flex-shrink: 0;
+  }
+
+  .swiper {
+    width: 100%;
+    overflow: hidden !important;
+  }
+
+  .container.py-5 {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-slide {
+    width: auto;
+    flex-shrink: 0;
+  }
+
+  .swiper {
+    width: 100%;
+    overflow: hidden !important;
+  }
+
+  .container.py-5 {
+    overflow: hidden;
+  }
+}
+.carousel-control-prev-custom,
+.carousel-control-next-custom,
+.carousel-control-prev-featured,
+.carousel-control-next-featured,
+.carousel-control-prev-newarrival,
+.carousel-control-next-newarrival,
+.carousel-control-prev-choosevehicle,
+.carousel-control-next-choosevehicle {
+    cursor: pointer;
+}
+
+
+
+.card-content {
+padding-top: 15px;
+}
+
+/* Fix for deposit section to prevent text wrapping and maintain consistent card heights */
+.card-content .flex-fill {
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 0 4px;
+  overflow: visible;
+}
+
+.card-content .flex-fill p {
+  white-space: nowrap;
+  overflow: visible;
+  margin-bottom: 0;
+  font-size: 13px;
+  line-height: 1.4;
+  word-break: keep-all;
+  display: block;
+  width: auto;
+  min-width: fit-content;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.card-content .flex-fill h6 {
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* Ensure the three-column layout maintains equal heights */
+.card-content .d-flex.justify-content-between.w-100 {
+  align-items: flex-start;
+  min-height: 60px;
+  overflow: visible;
+}
+
+/* Specific fix for deposit amount - ensure currency symbol and price stay together and fully visible */
+.card-content .flex-fill p {
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  max-width: 100%;
+}
+
+.card-title {
+font-size: 1.25rem;
+font-weight: bold;
+}
+
+.custom-card2 .btn {
+padding: 0.4rem 1rem;
+border-radius: 35px 0px 0px;
+background-color: rgb(21, 42, 136);
+}
+
+.icon-text {
+display: flex;
+align-items: center;
+background-color: #f5f5f5;
+padding: 8px 12px;
+border-radius: 6px;
+font-size: 13px;
+font-weight: 600;
+width: 48%;
+justify-content: center;
+}
+
+.icon-text img {
+margin-right: 8px;
+}
+.lang-tab-font{
+  margin-right: -25px;
+}
+.custom-card-img {
+  width: 340px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.custom-card-img-2 {
+  width: 322px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.custom-card-img-3 {
+  width: 372px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+/* for mobile screen */
+/* @media (max-width: 480px) {
+.custom-card2 {
+  max-width: 100%;
+}
+.custom-card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.custom-card-img-2 {
+  width: 345px;
+  height: 180px;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.card-content {
+  padding: 1.2rem;
+}
+} */
+.desktop-home-heading{
+  margin-top: 5rem !important;
+}
+@media (max-width: 480px) {
+  .text-load-more {
+    padding: 20px 0 !important;
+    margin-top: -22px !important;
+  }
+  /* cover space for mobile */
+  .chose-mobile-car-heading{
+    margin-top: -79px !important;
+  }
+  .mobile-category-home-cards{
+    margin-top: -50px !important;
+  }
+  .mobile-append-custom {
+        margin-top: -23px !important;
+        margin-bottom: 20px !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+  .mobile-custom-join{
+    margin-top: 173px !important;
+  }
+
+  .mobile-home-heading{
+    margin-top: 3rem !important;
+  }
+
+  .mobile-tip-category-text{
+    margin-top: -10px !important;
+  }
+
+  .mobile-testimonial-img{
+    margin-top: -45px !important;
+  }
+  .testimonial-box.mt-5{
+    margin-top: 0 !important;
+  }
+
+  .testimonial-bg {
+    height: 230px !important;
+    margin-top: 48px !important;
+    width: 337px !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 1 !important;
+    border-radius: 15px !important;
+}
+.car-logo-mobile{
+  margin-top: -60px !important;
+}
+.card-logo-mobile{
+  margin-top: -60px !important;
+}
+.card-text-mobile{
+  margin-top: -45px !important;
+}
+.card-button-mobile{
+  margin-top: 15px !important;
+}
+.chose-bg-img {
+    margin-top: -260px !important;
+    background-position: left calc(100% - 58px) !important;
+}
+.partner-mobile{
+  margin-top: -28px !important;
+}
+.questions-mobile{
+  margin-top: -28px !important;
+}
+.contact-section{
+  margin-top: -28px !important;
+}
+.footer-container{
+  margin-top: 10px !important;
+}
+/* cover space for mobile */
+    .row {
+        justify-content: center !important;
+        /* margin-left: 0 !important;
+        margin-right: 0 !important; */
+    }
+
+    .custom-card2 {
+        width: 100%;
+        max-width: 375px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .custom-card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.custom-card-img-2 {
+  /* width: 345px;
+  height: 180px; */
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.card-content {
+  padding-top: 12px !important;
+}
+.position-relative .card-content{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+     .custom-card2 h5 {
+        font-size: 14px !important;
+    }
+
+    .custom-card2 h6 {
+        font-size: 11px !important;
+    }
+}
+
+
+/* ======== SMALL TABLET 481px – 768px ======== */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .custom-card-img,
+  .custom-card-img-2,
+  .custom-card-img-3 {
+    max-width: 100%;
+    height: auto;
+  }
+.text-load-more.py-5 {
+    padding: 20px 0 !important;
+    margin-top: -22px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .card-content {
+    padding-top: 15px !important;
+  }
+
+}
+
+
+
+/* ======== TABLET 769px – 1024px ======== */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .custom-card-img,
+  .custom-card-img-2 {
+    height: 180px;
+    object-fit: inherit;
+    max-width: 100%;
+  }
+  .custom-card-img-3 {
+    width: 318px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+  .card-content {
+    padding-top: 15px !important;
+  }
+}
+
+
+
+/* ======== LAPTOP 1025px – 1440px ======== */
+@media (min-width: 1025px) and (max-width: 1440px) {
+.card-logo-mobile.py-5{
+  padding-top: 3rem !important;
+  padding-bottom: 1rem !important;
+}
+  .custom-card-img,
+  .custom-card-img-2,
+  .custom-card-img-3 {
+   height: 200px !important;
+   object-fit: inherit !important;
+   max-width: 100% !important;
+  }
+
+  .card-content {
+    padding-top: 15px !important;
+  }
+}
+
+
+
+/* ======== LARGE DESKTOP 1441px+ ======== */
+@media (min-width: 1441px) {
+
+  .custom-card-img,
+  .custom-card-img-2 {
+     height: 280px !important;
+   object-fit: inherit !important;
+   max-width: 100% !important;
+  }
+
+  .card-content {
+    padding-top: 15px !important;
+  }
+}

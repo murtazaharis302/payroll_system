@@ -1,0 +1,31 @@
+
+@media (max-width: 768px) {
+    .header-img {
+        width: 100px !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar-nav .nav-link {
+        color: var(--text-white);
+        font-size: 13px;
+        padding: 10px 15px;
+        transition: color 0.3s ease-in-out;
+    }
+}
+
+/* Added by AJ 27/11/25 */
+
+.footer-icon{
+  margin-top: -15px !important;
+  margin-left: 38px !important;
+}
+
+@media (min-width: 768px) {
+  .chose-bg-img {
+    background-image: url(../../icons/Cone2.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left calc(100% - 58px);
+  }
+}

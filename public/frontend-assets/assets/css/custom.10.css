@@ -1,0 +1,383 @@
+
+.category-buttons .category-btn.active {
+  background-color: #0d6efd !important;
+  color: white;
+}
+
+/* category card */
+/* .car-card {
+  padding: 10px;
+}
+
+.car-item {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.car-item:hover {
+  transform: translateY(-3px);
+}
+
+.car-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.car-card.active {
+  border: 2px solid #F5A623;
+}
+
+
+.car-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 10px;
+}
+
+.car-subtitle {
+  font-size: 14px;
+  background: #F0F0F0;
+  border-radius: 15px;
+  padding: 5px 12px;
+  display: inline-block;
+  margin-top: 5px;
+  color: #333;
+} */
+
+/* / Arrow Button / */
+.car-arrow-btn {
+  position: absolute;
+  bottom: 28px;
+  right: 15px;
+  background-color: #EAECED;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.car-arrow-btn i {
+  color:black;
+  font-size: 18px;
+}
+.car-card {
+  background: var(--text-white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  border: 2px solid transparent;
+}
+
+.car-card img {
+  width: 100%;
+  max-height: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.car-card .card-body {
+  padding: 15px;
+}
+
+.car-card h6 {
+  font-weight: bold;
+  color: var(--text-blue);
+}
+
+.car-card .vehicles {
+  font-size: 14px;
+  background: var(--grey-color);
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: inline-block;
+  border: 1px solid #E4E4E7;
+}
+
+.car-card .arrow-icon {
+  width: 30px;
+  height: 30px;
+  background: var(--grey-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+/* Hover Effect */
+.car-card:hover {
+  border-color: var(--text-orange);
+}
+
+.car-card:hover .arrow-icon {
+  background: var(--text-orange);
+  color: var(--text-white);
+  transform: scale(1.1);
+}
+/* / View All Button / */
+
+@media (max-width: 480px) {
+  .category-buttons {
+    display: block;
+   }
+
+   .remove-row-for-mbl{
+     display: block !important;
+   }
+   .car-card{
+     width: 100%;
+   }
+   .car-item img {
+    height: auto;
+   }
+}
+.time-input{
+  height: 48px;
+}
+/*
+.steps {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-text-clr{
+  color: #07407B;
+
+}
+.work-subtitle{
+  color: #666666;
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  background: var(--text-white);
+  border-radius: 12px;
+  padding: 20px;
+  margin-right: 10%;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.step-item::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  background: #ddd;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+}
+
+
+
+.step-item:last-child::before {
+  display: none;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+  margin-left: 20%;
+
+}
+
+.icon-wrap {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  position: absolute;
+ left: -80px;
+}
+
+.reverse .icon-wrap {
+  left: auto;
+  right: -96px;
+}
+
+.icon-wrap img {
+  width: 60px;
+  height: 60px;
+}
+
+
+
+.step-content {
+  flex-grow: 1;
+}
+
+.step-content h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.step-content p {
+  font-size: 14px;
+  color: #777;
+}
+
+@media (max-width: 480px) {
+  .steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  .step-item::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    background: #ddd;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+  }
+
+  .step-item:last-child::before {
+    display: none;
+  }
+
+  .icon-wrap {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: relative;
+    left: 7px;
+  }
+
+  .icon-wrap img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .step-content {
+    flex-grow: 1;
+  }
+
+  .step-content h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .step-content p {
+    font-size: 13px;
+    color: #777;
+  }
+  .reverse .icon-wrap {
+    left: auto;
+    right: -7px;
+  }
+  .reverse {
+    margin-left: 0px !important;
+  }
+} */
+
+/* / tip cards css / */
+.tip-card {
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.icon-container {
+  display: inline-block;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.icon-container img {
+  width: 233px;
+  height: 293px;
+}
+
+.tip-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.tip-description {
+  font-size: 14px;
+  color: #555;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+ /* / car-listing-sidebar / */
+ .car-listing-sidebar {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* / Input Fields / */
+.car-input-box {
+  width: 100%;
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* / Brand Section / */
+.brand-section {
+  background: #F4F4F5;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.brand-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

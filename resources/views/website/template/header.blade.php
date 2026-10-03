@@ -1,0 +1,8 @@
+@include('website.template._header_desktop')
+@include('website.template._header_mobile')
+@include('website.template._header_hero')
+@include('website.template._register_modal')
+@include('website.template._login_modal')
+@include('website.template._rental_login_modal')
+@include('website.template._header_scripts')
+@include('website.template._header_styles')

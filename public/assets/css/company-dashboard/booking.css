@@ -1,0 +1,299 @@
+.car-list::-webkit-scrollbar-track {
+    background: var(--scroll-back);
+}
+
+/* .table td{
+    vertical-align: middle;
+} */
+ /* by salman */
+ /* / booking dashboard css / */
+.chart-container {
+    /* width: 50%; */
+    height: 450px;
+    max-width: 900px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px var(--box-shadow);
+}
+.chart-wrapper {
+    height: 320px;
+}
+.booking-legend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.booking-legend span {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.booking-legend span div {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+.done-color { background: var(--text-orange); }
+.canceled-color { background: var(--text-blue); }
+
+.booking-dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+}
+.booking-card {
+    background: var(--text-white);
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0 2px 10px var(--box-shadow);
+    position: relative;
+}
+.booking-card h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+.booking-card h6 {
+    margin: 5px 0;
+    color: gray;
+}
+.booking-cards-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.booking-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: #f5f9fc;
+    border-radius: 8px;
+}
+
+.booking-icon-container svg {
+    color: #3c5062;
+}
+.booking-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.booking-status span {
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.up {
+    background: #e0f7fa;
+    color: var(--text-dark-green);
+}
+.down {
+    background: #ffebee;
+    color: var(--text-dark-red);
+}
+.booking-chart-up {
+    height: 50px;
+    /* margin-top: 15px; */
+
+    background: url('../../assets/images/booking-chart-up.png') no-repeat center/cover;
+
+    border-radius: 5px;
+}
+.chart-down {
+    height: 50px;
+    /* margin-top: 15px; */
+
+    background: url('../../assets/images/booking-chart-down.png') no-repeat center/cover;
+
+    border-radius: 5px;
+}
+.booking-bottom-text {
+    margin-top: 10px;
+    color: gray;
+    font-size: 12px;
+}
+
+/* / booking datatable section / */
+/* / Container / */
+.booking-container {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+
+}
+
+
+/* / Header Section - Aligned / */
+.booking-header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+
+/* .dataTables_wrapper{
+    overflow-x: auto;
+    width: 100%;
+} */
+
+
+/* / Search Bar / */
+.booking-search-box {
+    background: var(--text-light-gray);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dataTables_length select {
+    background: var(--text-light-gray) !important;
+    border: none !important;
+    border-radius: 4px !important;
+    padding: 5px 10px !important;
+
+    font-size: 14px !important;
+    margin-bottom: 7px;
+
+}
+
+.booking-search-box input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    outline: none;
+}
+
+/* / Filters / */
+.booking-filter-box {
+    /* background-color: var(--text-light-gray); */
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.booking-filter-custom-dropdown {
+    display: flex;
+    align-items: center;
+    background: var(--text-light-gray);
+    border-radius: 8px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.booking-filter-icon svg {
+    width: 16px;
+    height: 18px;
+    color: #555;
+    margin-left: 17px;
+}
+
+/* / Add Booking Button / */
+.booking-btn-add {
+    background-color: var(--text-orange);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-weight: bold;
+    border: none;
+}
+
+/* / Table Header / */
+.booking-table thead th {
+    background-color: #ECF5FA;
+    border-bottom: 2px solid #e0e6ed;
+    padding: 12px;
+    color: #4C596A !important;
+    font-weight:500 !important;
+}
+
+.table td{
+    /* display: flex !important;
+    border-bottom: none !important; */
+    vertical-align: middle;
+}
+
+.odd {
+    background-color: transparent !important;
+    color: #000000 !important;
+
+}
+.even {
+    background-color: transparent !important;
+    color: #000000 !important;
+
+}
+
+
+/* / Car Type Badge / */
+.car-badge {
+    background-color: #F6F9FB;
+    color: #4C596A;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* / Payment Status / */
+.status-paid {
+    background-color: #ECF5FA;
+    color: var(--text-light-green);
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.status-pending {
+    background-color: #FFF1F3;
+    color: var(--text-dark-orange);
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* / Status Badges / */
+.status-badge {
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* .status-returned {
+    background-color: var(--text-dark-blue);
+    color: white;
+} */
+
+.status-ongoing {
+    background-color: #C4E6F8;
+    color: var(--black-color);
+}
+
+.status-cancelled {
+    background-color: #FFDADF;
+    color: var(--black-color);
+}
+
+/* / Driver Icon / */
+.driver-icon {
+    font-size: 12px;
+    font-weight: bold;
+}

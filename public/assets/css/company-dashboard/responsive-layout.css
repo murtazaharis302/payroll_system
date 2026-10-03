@@ -1,0 +1,225 @@
+/* / Responsive / */
+@media (max-width: 768px) {
+    .booking-header-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .booking-search-box, .booking-filter-box, .booking-btn-add {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .chart-container{
+        height: 322px;
+        width: 100%;
+    }
+}
+
+/* / DataTable Pagination Styles / */
+.dataTables_paginate {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+.paginate_button .current {
+    color: var(--white-color)!important;
+}
+
+
+
+.dataTables_paginate .paginate_button {
+    background: var(--text-light-gray);
+    border: none !important;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #34495E;
+    cursor: pointer;
+    margin: 0 2px;
+    transition: 0.3s ease;
+}
+
+.dataTables_paginate .paginate_button.current {
+    background: var(--text-orange) !important;
+    color: var(--white-color)!important;
+    font-weight: bold;
+    border: none !important;
+    border-radius: 10px !important;
+}
+
+
+.dataTables_paginate .paginate_button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* / Results Per Page Dropdown / */
+/* .dataTables_length select {
+
+} */
+
+/* / Align Results per Page to Left / */
+.dataTables_length {
+    float: left;
+}
+@media (max-width: 768px) {
+    .chart-container {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .booking-dashboard {
+        display: block;
+    }
+
+}
+/* added by farhan */
+.card {
+    border-radius: 12px;
+    background-color: #f8f9fa;
+    border: none;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e3e6f0;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #333;
+}
+
+.change-box {
+    background: #d1e7dd;
+    color: #198754;
+    padding: 3px 7px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.change-box.danger {
+    background: #f8d7da;
+    color: #dc3545;
+}
+/* summary css */
+/* .summary{
+    margin-top: -250px;
+    padding: 0px 10px 0px 10px;
+}
+@media (max-width: 480px) {
+    .summary {
+        margin-top: 0px;
+        padding: 0px 10px 0px 10px;
+    }
+    .summary2 {
+      margin-top: 0px !important;
+      padding: 0px 10px 0px 10px !important;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .summary {
+        margin-top: -500px;
+    padding: 0px 10px 0px 10px;
+
+    }
+}
+.summary2 {
+    margin-top: -150px;
+    padding: 0px 10px 0px 10px;
+} */
+/* end cummary css */
+/* reminder */
+
+.reminder-body .mt-3 {
+    max-height: 650px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.reminder-item {
+    display: flex;
+    align-items: center;
+    background-color: #E8F3FC;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    min-height: 70px;
+}
+
+.reminder-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 12px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reminder-icon i {
+    font-size: 18px !important;
+    color: #E63946 !important;
+}
+
+.reminder-text {
+    font-weight: 500;
+    color: #333;
+    font-size: 14px !important;
+    text-align: left;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.text-muted {
+    font-size: 12px !important;
+}
+
+/* end reminder */
+
+/*  Container  */
+.booking-container {
+    background: var(--white-color);
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  .booking-header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .booking-search-box {
+    background: var(--text-light-gray);
+    border-radius: 8px;
+    padding: 10px 15px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .booking-search-box input {
+    border: none;
+    background: transparent;
+    /* width: 100%; */
+    outline: none;
+     border: none;
+  }
+  .table td{
+    vertical-align: middle;
+}

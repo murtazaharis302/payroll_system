@@ -1,0 +1,382 @@
+
+.brand-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-btn {
+  text-align: left;
+  border: 1px solid #ddd;
+  background: white;
+  padding: 10px;
+  font-size: 14px;
+  color: #000;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.brand-btn.active {
+  border: 1px solid var(--text-blue);
+  /* background: #f0f7ff; */
+  font-weight: bold;
+}
+
+/* / Find Car Button / */
+.find-car-btn {
+  width: 100%;
+  /* background-color: #002f6c; */
+  color: var(--text-white);
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+
+/* / Car Card Styling / */
+.car-listing-card {
+  background: var(--text-white);
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  max-width: 320px;
+  margin: auto;
+}
+
+.listing-car-image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* / Price & Book Button / */
+.price-book {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  background: #f5f7fa;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.car-price{
+  font-size: 16px;
+  color: #0056b3;
+}
+
+.book-btn {
+  background: #003f7f;
+  color: white;
+  border: none;
+  padding: 10px 35px;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+  transition: background 0.3s ease;
+}
+
+.static-display-flex{
+  display: flex;
+}
+
+@media (max-width: 480px) {
+   .static-display-flex{ display: block; }
+   }
+
+/* / Car Name / */
+.car-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: start;
+}
+
+
+/* / Car Details / */
+.car-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.detail-item {
+  background: #f8f9fa;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  color: #666;
+}
+
+.detail-item i {
+  color: #ff8c00;
+}
+
+/* / Details Button / */
+.details-btn {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* / Filter Bar / */
+.filter-bar {
+  background: #F4F4F5;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* / Results Text / */
+.results {
+  font-size: 17px;
+  margin-left: 5px;
+}
+
+/* / Icons / */
+.menu-icon,
+.filter-icon,
+.sort-icon {
+  font-size: 16px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* / car-listing-dropdown / */
+.car-listing-dropdown {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+/* / Select Box / */
+.car-listing-form-select {
+  border: none;
+  background: transparent;
+  font-size: 17px;
+  cursor: pointer;
+  padding: 2px 5px;
+}
+
+/* card cvv */
+.custom-card-icons img {
+  width: 60px;
+  margin-right: 10px;
+}
+.custom-label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.custom-input {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+.cvv-card{
+  background-color: white;
+  border-radius: 5px;
+}
+/* end card cvv */
+
+/* about us css */
+
+.about-img{
+  width: 100%;
+  height: 250px;
+}
+
+
+/* Section Styling */
+.highlight {
+  color: var(--text-blue);
+  font-weight: bold;
+}
+.section {
+  padding: 50px 0;
+}
+.join-program-box {
+  /* border: 2px dashed #007bff; */
+  padding: 20px;
+  text-align: center;
+}
+.stat-box {
+  background-color: var(--text-blue);
+  color: white;
+  padding: 66px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 22px;
+}
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.info-box {
+  position: absolute;
+  bottom: 10px;
+
+  left: 185px;
+  background: white;
+  padding: 20px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.equal-height {
+  background-color: var(--text-blue);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .info-box {
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+    background: white;
+    padding: 10px 9px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .info-box {
+    position: absolute;
+    bottom: 10px;
+    left: 140px;
+    background: white;
+    padding: 10px 9px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+}
+@media (max-width: 480px) {
+  .info-box {
+    position: absolute;
+    bottom: 10px;
+    left: 132px;
+    background: white;
+    padding: 10px 9px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+}
+
+/* new css mission */
+.section-padding {
+  padding: 60px 0;
+}
+
+.custom-btn {
+  background-color: #FFC107;
+  border: none;
+  color: black;
+  font-weight: bold;
+}
+
+.custom-badge {
+  background-color: #E8E8E8;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.image-grid img {
+  border-radius: 12px;
+  width: 100%;
+  aspect-ratio: 1/1; /* Ensures square images */
+  object-fit: cover; /* Maintains aspect ratio and fills the container */
+}
+.mission-section{
+  margin-bottom: 5rem !important;
+}
+.custom-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-list li {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between icon and text */
+}
+
+.custom-list img {
+  width: 24px; /* Set icon size */
+  height: 24px;
+}
+
+/* end css mission */
+
+.mission-section {
+  padding: 50px;
+}
+.mission-text h1 {
+  font-weight: bold;
+}
+.btn-custom {
+  background-color: var(--text-orange);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+}
+.mission-icon-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mission-icon-text i {
+  color: #17C964;
+  font-size: 21px;
+}
+.our-mission-text{
+  padding: 15px;
+  background-color: #07407B33;
+  color: #000000;
+}
+
+.commitment-section {
+  padding: 50px;
+}
+.commitment-text{
+  margin-left: 16%;
+}
+.commitment-text h1 {
+  font-weight: bold;
+}
+.btn-custom {
+  background-color: var(--text-orange);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+}

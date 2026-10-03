@@ -1,0 +1,380 @@
+
+
+/* Steps Container */
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Step Circle */
+.step-number {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  background: #fff;
+  border: 3px solid #e3ecfc;
+  color: #000;
+  position: relative;
+  z-index: 1;
+  margin-top: 28px;
+}
+
+.progress-step.active .step-number {
+  background: var(--text-orange);
+  color: #fff;
+  border: 3px solid var(--text-orange);
+  margin-top: 28px;
+}
+
+.progress-step .step-text {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+@media (max-width: 480px) {
+  .mobile-car {
+    display: none !important;
+  }
+  .price-car{
+    font-size: 14px;
+  }
+  .car-order-img {
+    width: 295px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.stepper {
+  max-width: 100%;
+  padding: 0 10px;
+}
+
+.step {
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+}
+
+.line {
+  height: 3px;
+}
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .car-order-img {
+    width: 170px;
+    height: 114px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.btn-order-book {
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  padding: 10px 10px;
+  border: none;
+  width: 35%;
+}
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .car-order-img {
+    width: 230px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.btn-order-book {
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  padding: 10px 10px;
+  border: none;
+  width: 35%;
+}
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .car-order-img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}
+/* end order car */
+/* book order */
+.text-size{
+  font-size: 16px;
+}
+/* end book order */
+/* footer inner 2 */
+.subscribe-box {
+  display: flex;
+  /* border-radius: 30px; */
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.subscribe-box input {
+  border: none;
+  padding: 10px 15px;
+  flex-grow: 1;
+  outline: none;
+  width: 100%;
+}
+
+.subscribe-box button {
+  background-color: var(--text-orange);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.subscribe-box button:hover {
+  background-color: var(--text-orange);
+}
+
+.inner-footer {
+  background: url('../../icons/inner-footer.png') no-repeat bottom;
+  background-size: 100% auto;
+}
+.text-inner-footer{
+  font-size: 12px;
+}
+.icons-inner-footer{
+  height: 30px;
+  width: 30px;
+  text-align: center;
+}
+.logo-inner-footer{
+  width: 150px;
+}
+@media (max-width: 768px) {
+  .subscribe-box {
+    align-items: center;
+  }
+
+  .subscribe-box input {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .subscribe-box button {
+    width: 100%;
+  }
+}
+.border-custom {
+  border-right: 2px dashed white;
+  align-self: stretch;
+  border-bottom: none;
+}
+@media (max-width: 480px) {
+.inner-footer {
+  background: url('../../icons/inner-footer.png') no-repeat bottom;
+  height: 648px !important;
+  /* width: 320px; */
+}
+.border-custom {
+  border-right: none;
+  border-bottom: 2px dashed white;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.logo-inner-footer{
+  width: 80px;
+}
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .inner-footer {
+    background: url('../../icons/inner-footer.png') no-repeat center;
+    background-size: 100% auto;
+  }
+  .logo-inner-footer{
+    width: 100px;
+  }
+}
+
+
+
+
+
+/* css by salman */
+/* / register modal css added by sf / */
+.input-group {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  /* padding: 10px; */
+  /* / background: #f9f9f9; / */
+}
+.input-group.input-error {
+  border-color: var(--text-danger) !important;
+  box-shadow: 0 0 0 1px var(--text-danger);
+}
+.input-group.input-error .input-group-text,
+.input-group.input-error .form-control {
+  border-color: var(--text-danger) !important;
+}
+.input-group-text {
+  background: transparent;
+  border: none;
+  color: #888;
+}
+.form-control {
+  border: none;
+  /* background: transparent; */
+  box-shadow: none;
+}
+.form-control-border{
+  border: 1.5px solid #ccc !important;
+  border-radius: 5px;
+  background: white;
+}
+.heading-background{
+  background-color: #F4F4F5;
+}
+.form-control::placeholder {
+  color: #888;
+}
+.btn-color{
+  background-color: var(--text-blue);
+  color: #fff;
+  height: 40px;
+}
+.btn-color:hover {
+background-color: var(--text-hover-blue);
+color: #fff;
+}
+.login-link-text{
+  text-decoration: none;
+  color: var(--text-blue);
+  font-weight: 600;
+}
+
+.icon-size{
+  font-size: 20px;
+}
+
+.modal-header {
+  position: relative;
+  /* / padding-top: 2rem; / */
+  margin-bottom: -26px;
+}
+.btn-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  margin-top: 10px;
+}
+
+.modal-content{
+  margin-top: 68px;
+}
+
+/* / end register modal css / */
+
+/* car rental popup register login button  */
+.rental-custom-modal {
+  border-radius: 16px;
+}
+.modal-content {
+  border-radius: 16px;
+  padding: 20px;
+}
+.modal-body {
+  text-align: center;
+}
+.back-arrow {
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 5px;
+}
+.rental-register-btn, .rental-login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align text and icon to the left */
+  padding: 12px 16px;
+  border-radius: 12px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.rental-register-btn {
+  background-color: #9498FD; /* Light Purple */
+  color: white;
+}
+
+.rental-login-btn {
+  background-color: #F06115; /* Orange */
+  color: white;
+}
+
+.rental-btn-icon {
+  width: 20px; /* Adjust icon size */
+  height: 20px;
+  margin-right: 10px; /* Add space between icon and text */
+}
+.rental-header-img{
+  width: 100px;
+  margin-bottom: 20px;
+}
+.renteal-body{
+  margin: 30px 30px 30px 30px;
+}
+
+/* end  */
+
+ /* / Header / */
+ .header-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* / Filter Buttons / */
+.category-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.category-buttons button {
+  background: #000;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 15px;
+  border: none;
+  margin: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.category-buttons button.active {
+  background: #003380;
+}
+
+/* / Card Styling / */
+/* / Category Buttons / */
+.category-buttons .category-btn {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 18px;
+  margin: 5px;
+  border-radius: 5px;
+}

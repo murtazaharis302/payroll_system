@@ -1,0 +1,299 @@
+:root {
+    --white-color:#ffffff;
+    --black-color:#000000;
+
+    --grey-color:grey;
+    --text-white:#ffffff;
+    --text-black:#000000;
+    --scroll-back:#A1A9AD;
+    --text-grey:#000000;
+    --text-orange:#f06115;
+    --text-blue:#07407B;
+    --text-dark-green:#00796b;
+    --text-dark-red:#FF2741;
+    --text-light-gray:#F5F5F5;
+    --text-background-color: #333;
+    --status-cancel:#C4E6F8;
+    --pending-background:rgba(255, 0, 0, 0.1);
+    --text-dark-orange:#E67E22;
+    --car-number:#d9d8d8;
+    --car-color:grey;
+    --box-shadow:rgba(0, 0, 0, 0.1);
+    --scroll-clr:rgb(110, 109, 109);
+    --scroll-back:#f8f9fa;
+    --car-scroll:#ccc;
+    --table-head:#ECF5FA;
+    --white-color:#ffffff;
+    --black-color:#000000;
+
+    --grey-color:#eeeeee;
+    --text-white:#ffffff;
+    --text-black:#000000;
+    --scroll-back:#A1A9AD;
+    --text-grey:#000000;
+    --text-orange:#E67E22;
+    --text-blue:#07407B;
+    --text-dark-green:#00796b;
+    --text-dark-red:#FF2741;
+    --text-light-gray:#F5F5F5;
+    --text-background-color: #333;
+    --status-cancel:#C4E6F8;
+    --pending-background:rgba(255, 0, 0, 0.1);
+    --text-dark-orange:#E67E22;
+    --car-number:#d9d8d8;
+    --car-color:grey;
+    --box-shadow:rgba(0, 0, 0, 0.1);
+    --scroll-clr:rgb(110, 109, 109);
+    --scroll-back:#f8f9fa;
+    --car-scroll:#ccc;
+    --table-head:#ECF5FA;
+}
+
+.bg-orange-clr{
+    background-color: #f06115 !important;
+}
+
+  .card-clickable {
+        transition: transform 0.2s, box-shadow 0.2s;
+        cursor: pointer;
+    }
+
+    .card-clickable:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-clickable:active {
+        transform: translateY(0px) scale(0.98);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+     .reminder-body div[style*="overflow-y: auto;"] {
+        scrollbar-width: thin;
+        scrollbar-color: #ccc transparent;
+    }
+
+    .reminder-body div[style*="overflow-y: auto;"]::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    .reminder-body div[style*="overflow-y: auto;"]::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 10px;
+    }
+   /*  Container  */
+.booking-container {
+    background: var(--white-color);
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  .booking-header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+
+
+  .booking-search-box {
+    background: var(--text-light-gray);
+    border-radius: 8px;
+    padding: 10px 15px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .booking-search-box input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    outline: none;
+     border: none;
+  }
+
+  .booking-filter-box {
+    background-color: var(--text-light-gray);
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    gap: 8px;
+  }
+
+  .booking-table thead th {
+    background-color: var(--table-head);
+    border-bottom: 2px solid var(--white-color);
+    padding: 12px;
+    font-weight: bold;
+  }
+
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: capitalize;
+  }
+
+  .status-returned {
+    background-color: var(--text-blue);
+    color: var(--white-color);
+  }
+
+  .status-cancelled {
+    background-color: var(--status-cancel);
+    color: var(--text-black);
+  }
+
+  .status-ongoing {
+    background-color: var(--status-cancel);
+    color: var(--text-black);
+  }
+
+  .status.paid {
+    background-color: var(--text-blue);
+    color: var(--text-white);
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  .status.pending {
+    background-color: var(--pending-background);
+    color: var(--text-dark-red);
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  .car-number {
+    display: inline-block;
+    background: var(--car-number);
+    color: var(--car-color);
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 5px;
+  }
+ /* filter car section */
+ .filter-container {
+    background: var(--white-color);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0px 4px 10px var(--box-shadow);
+}
+
+.card-filter {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px var(--box-shadow);
+    padding: 15px;
+    background: var(--text-white);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.car-info {
+    flex-grow: 1;
+}
+
+.btn-warning {
+    width: 100%;
+    font-weight: bold;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    padding: 10px 15px;
+}
+
+.progress {
+    height: 6px;
+    border-radius: 5px;
+}
+
+.car-img {
+    width: 40px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .filter-container {
+        padding: 20px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .car-img {
+        width: 35px;
+    }
+}
+
+.card-filter {
+    background: var(--text-white);
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px var(--box-shadow);
+}
+
+.icon-activity {
+    width: 40px;
+    height: 40px;
+    background: var(--text-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 16px;
+    color: var(--grey-color);
+}
+
+/* .text-muted {
+    color: var(--grey-color) !important;
+} */
+.activity {
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.activity::-webkit-scrollbar {
+    width: 6px;
+}
+
+.activity::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-clr);
+    border-radius: 10px;
+}
+
+.activity::-webkit-scrollbar-track {
+    background: var(--scroll-back);
+}
+.car-list {
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+
+.car-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.car-list::-webkit-scrollbar-thumb {
+    background-color: var(--car-scroll);
+    border-radius: 10px;
+}

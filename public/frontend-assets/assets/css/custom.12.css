@@ -1,0 +1,378 @@
+
+.video-container {
+  position: relative;
+}
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 24px;
+}
+.overlay-image {
+  position: absolute;
+  bottom: -70px;
+  left: 224px;
+  width: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+
+  .hide-for-mobile{
+      display: none;
+  }
+  .commitment-text{
+  margin-left: 0px;
+}
+.section {
+  text-align: center;
+}
+
+
+}
+
+.team-section {
+  text-align: center;
+  padding: 50px 0;
+}
+.team-member {
+  position: relative;
+  text-align: center;
+}
+.team-member img {
+  border-radius: 50% 50% 0 0;
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50% 50% 0 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.team-member:hover .overlay {
+  opacity: 1;
+}
+.about-social-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.about-social-icons a {
+  color: #fff;
+  font-size: 18px;
+  background: #333;
+  border-radius: 50%;
+  padding: 8px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.member-info {
+  background: #2c1a47;
+  color: #fff;
+  padding: 10px;
+  border-radius: 0 0 50% 50%;
+  position: absolute;
+  bottom: -61px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 44%;
+}
+.member-info h5 {
+  margin: 0;
+  font-size: 16px;
+}
+.member-info p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* end about us css */
+/* our commitment css */
+.custom_commitment-section {
+  background-color: #f9f9f9;
+}
+.custom_image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+/* .custom_main-image {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+.custom_overlay-image {
+  width: 218px;
+  bottom: 50px;
+  right: 140px;
+  height: 250px;
+} */
+.custom_play-btn {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.custom_badge {
+  background: #dbeafe;
+  color: #000;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+.custom_heading {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+.custom_paragraph {
+  font-size: 16px;
+  color: #666;
+}
+
+
+.custom_btn i {
+  margin-left: 10px;
+}
+@media (max-width: 480px) {
+/* .custom_overlay-image{
+  display: none !important;
+} */
+.mobile-m{
+  margin: 0px 10px 0px 5px;
+}
+.custom_badge {
+  margin-top: 15px;
+  background: #dbeafe;
+  color: #000;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-left: 85px;
+}
+.custom_heading {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: center;
+}
+.custom_paragraph {
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+}
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .icon-container img {
+    width: 233px;
+    height: 170px;
+}
+  /* .custom_overlay-image{
+    display: none !important;
+  } */
+  .mobile-m{
+    margin: 0px 0px 0px 14px;
+  }
+  .custom_badge {
+    margin-top: 15px;
+    background: #dbeafe;
+    color: #000;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-left: 250px;
+  }
+  .custom_heading {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
+  }
+  .custom_paragraph {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+  }
+}
+/* end our commitment css */
+/* ameezing team */
+.team-card {
+  position: relative;
+  width: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.3s;
+  margin-top: 3px;
+}
+.team-card img {
+  width: 100%;
+  border-radius: 50%;
+}
+.team-info {
+  background-color: var(--text-blue);
+  color: white;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.social-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.social-icons a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #6c757d;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.team-card:hover .social-icons {
+  opacity: 1;
+}
+/* end amezing team */
+
+/* check out */
+
+.text-check-out-clr{
+  color: #757783;
+}
+.start-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.start-icon img {
+  width: 20px;
+}
+.start-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+.start-text {
+  font-size: 14px;
+  color: #666;
+}
+.order-icon-img{
+  height: 40px;
+}
+.progress-bar-filled-check-out{
+  width: 100%;
+  height: 5px;
+  background-color:var(--text-orange);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* add new css for car listing smart dropdown css code*/
+  /* Dropdown Container */
+  .car-listing-dropdown-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Dropdown Button */
+.dropdown-btn {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+}
+
+.dropdown-btn:hover {
+    border-color: var(--text-blue);
+    /* box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2); */
+}
+
+/* Dropdown Arrow */
+.dropdown-arrow {
+    font-size: 14px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dropdown-arrow.rotate {
+    transform: rotate(180deg);
+}
+
+/* Dropdown Menu */
+.dropdown-menu-custom {
+    display: none;
+    width: 100%;
+    position: absolute;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.dropdown-menu-custom.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Search Box */
+.search-box {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}

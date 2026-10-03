@@ -1,0 +1,55 @@
+:root {
+    --white-color:#ffffff;
+    --black-color:#000000;
+    --grey-color:#eeeeee;
+    --text-white:#ffffff;
+    --text-black:#000000;
+    --scroll-back:#A1A9AD;
+    --text-grey:#000000;
+    --text-orange:#f06115;
+    --text-hover-orange:#d6520f;
+    /* --text-hover-orange:#ff732c; */
+    --text-blue:#07407B;
+    
+}
+
+
+.btn-orange-clr {
+    background-color: var(--text-orange);
+    color: #fff;
+}
+
+.btn-orange-clr:hover {
+    background-color: var(--text-hover-orange);
+    color: #fff;
+}
+
+  .btn-dark-blue-clr {
+    background-color: var(--text-blue);
+    color: #fff;
+}
+
+.btn-dark-blue-clr:hover {
+    background-color: var(--text-hover-blue);
+    color: #fff;
+}
+
+  
+  .text-orange{
+    color: var(--text-orange);
+  }
+  .car-count-badge {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    background-color: var(--text-orange);
+    color: var(--text-white);
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.btn.disabled, .btn:disabled, fieldset:disabled .btn{
+  background-color: var(--text-orange)!important;
+  opacity: var(--bs-btn-disabled-opacity)!important;
+}

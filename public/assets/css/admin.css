@@ -1,0 +1,185 @@
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}   
+.modal-dialog {
+    max-width: 900px; 
+} 
+.thumbnail
+    {
+        width: 120px; 
+        height: 120px; 
+        border-radius: 8px; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+.image
+    {
+        width: 120px; 
+        height: 120px; 
+        border-radius: 8px; 
+        margin: 5px; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+.disabled-link {
+    pointer-events: none; /* Prevents clicking */
+    opacity: 0.5; /* Makes it look disabled */
+}
+
+.read-more-link {
+    color: #295cc5;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.read-more-link:hover {
+    color: #295cc5;
+}
+
+.delete-btn
+{
+    color: red;
+}
+
+.pending-btn
+{
+    color: green;
+    margin-right: 10px;
+}
+
+body[data-leftbar-color=dark] .left-side-menu #sidebar-menu .menuitem-active>a{
+    color: #ffffff!important;
+    background-color: #f06115!important;
+}
+
+body[data-leftbar-color=dark] .left-side-menu{
+    background-color: white;
+}
+
+.navbar-custom{
+    background-color: white;
+}
+
+.navbar-custom .topnav-menu .nav-link{
+    color: #9097A7;
+}
+
+.navbar-custom .button-menu-mobile{
+    color: #9097A7;
+}
+
+.btn-primary {
+    background-color: #f06115!important;
+    border: #f06115!important;
+    color: white!important;
+    
+}
+
+/* .btn:hover {
+    background-color: #000!important;
+    border: #000!important;
+    color: white!important;   
+} */
+
+.fa-pen-to-square{
+    color: #f06115; 
+    margin-right: 10px;
+}
+.theme-color{
+    color: #f06115!important;
+}
+
+.logo-box{
+    background-color: white!important;
+}
+
+.custom-logo{
+    margin-top: -22px;
+}
+
+:root {
+    --white-color:#ffffff;
+    --black-color:#000000;
+    --grey-color:#eeeeee;
+    --text-white:#ffffff;
+    --text-black:#000000;
+    --scroll-back:#A1A9AD;
+    --text-grey:#000000;
+    --text-orange:#f06115;
+    --text-blue:#07407B;
+    
+    }
+
+    .btn-orange-clr{
+        background-color: var(--text-orange);
+        --bs-btn-hover-bg: var(--text-orange);
+    }
+
+    .btn-dark-blue-clr{
+        background-color: var(--text-blue);
+        --bs-btn-hover-bg: var(--text-blue);
+    }
+    
+    .text-orange{
+        color: var(--text-orange);
+    }
+    .car-count-badge {
+        position: absolute;
+        top: -5px;
+        right: 0;
+        background-color: var(--text-orange);
+        color: var(--text-white);
+        border-radius: 50%;
+        padding: 2px 6px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .star-rating {
+    direction: rtl;
+    font-size: 1.5rem;
+    unicode-bidi: bidi-override;
+    display: inline-block;
+    justify-content: start;
+    }
+
+    .star-rating input[type="radio"] {
+        display: none;
+    }
+
+    .star-rating label {
+        color: #ccc;
+        cursor: pointer;
+        transition: color 0.2s;
+    }
+
+    .star-rating input[type="radio"]:checked ~ label,
+    .star-rating label:hover,
+    .star-rating label:hover ~ label {
+        color: #ffc107;
+    }
+
+/* Fix excessive min-height caused by theme condensed leftbar default */
+body[data-leftbar-size=condensed]:not([data-layout=compact]),
+body[data-leftbar-size=condensed],
+body {
+    min-height: 100vh !important;
+}
+
+.content-page {
+    min-height: calc(100vh - 70px) !important;
+    position: relative !important;
+    padding-bottom: 60px !important;
+}
+
+.footer {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 240px !important;
+    right: 0 !important;
+}
+
+body[data-leftbar-size=condensed] .footer {
+    left: 70px !important;
+}
+
+

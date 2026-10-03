@@ -1,0 +1,390 @@
+
+/* end work */
+/* benefits */
+.custom-benefit-step {
+  position: relative;
+  text-align: center;
+}
+.custom-benefit-step:last-child::after {
+  display: none;
+}
+.custom-icon-circle {
+   width: 80px;
+  height: 80px;
+}
+.custom-icon-circle img {
+  width: 40px;
+  height: 40px;
+}
+.custom-benefit-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  .mobile-benefits {
+    display: block !important;
+  }
+  .desktop-benefits {
+    display: none !important;
+  }
+
+  .benefits-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.benefits-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* margin-bottom: 40px; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon {
+    height: 40px;
+}
+
+.icon img {
+    width: 60px;
+}
+
+.line {
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    background: #F7A93F;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.content {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 14px;
+    color: #666;
+}
+
+}
+
+ @media (min-width: 481px) and (max-width: 768px) {
+  .mobile-benefits {
+    display: none !important;
+  }
+  .desktop-benefits {
+    display: block !important;
+  }
+  .testimonial-bg {
+    background: url('../../icons/test.png') no-repeat center / cover;
+      height: 230px;
+      margin-top: 44px;
+      width: 280px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      border-radius: 15px;
+  }
+  .testimonial-img {
+    width: 100%;
+    max-width: 250px;
+    position: relative;
+    z-index: 2;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .mobile-benefits {
+    display: none !important;
+  }
+  .desktop-benefits {
+    display: block !important;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .mobile-benefits {
+    display: none !important;
+  }
+  .desktop-benefits {
+    display: block !important;
+  }
+}
+/* end benefits */
+/* parther */
+.custom-join-img{
+  height: 300px;
+  width: 250px;
+}
+.custom-width {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.custom-join-img2{
+  margin-left: 127px;
+
+  height: 300px;
+  width: 250px;
+}
+.custom-program-left-list{
+  margin-bottom:-150px;
+}
+.custom-program-become-partner{
+  margin-top: -120px;
+}
+.custom-program-become-partner2{
+  margin-top: -80px;
+}
+.custom-program-list {
+  top: 40px;
+}
+ @media (min-width: 481px) and (max-width: 768px) {
+.custom-program-left-list{
+  margin-bottom:-400px;
+}
+.custom-program-become-partner{
+  margin-top: 0px;
+}
+.custom-program-become-partner2{
+  margin-top: 80px;
+}
+.custom-program-list {
+  top: 40px;
+}
+ }
+.custom-text-heading{
+  color: #227CAA !important;
+}
+.text-font{
+  font-size: 16px;
+}
+.heading-text-font{
+  font-size: 28px;
+}
+.ps-lg-4 {
+  padding-left: 4.5rem !important;
+  padding-bottom: 2rem;
+}
+.custom-col {
+  width: 100%;
+  max-width: 400px;
+}
+
+.custom-title {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-success {
+  color: #17C3B2;
+}
+
+.custom-danger {
+  color: #FE6D73;
+}
+
+.custom-progress {
+  width: 100%;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.custom-progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.6s ease-in-out;
+}
+
+.custom-progress-success {
+  background-color: #1abc9c;
+}
+
+.custom-progress-danger {
+  background-color: var(--text-danger);
+}
+
+@media (max-width: 480px) {
+  .mobile-container {
+    display: block !important;
+  }
+  .desktop-view {
+    display: none !important;
+  }
+  /* Mobile Container */
+.mobile-container {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Heading and Text */
+.mobile-heading {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.mobile-subheading {
+  font-size: 16px;
+  text-align: center;
+  color: #3498db;
+}
+
+.mobile-text {
+  font-size: 14px;
+  text-align: start;
+  color: #555;
+}
+
+/* Images */
+.mobile-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Boxes */
+.mobile-box {
+  /* background: #f9f9f9; */
+  padding: 0px;
+  /* border-radius: 8px;
+  margin: 10px 0; */
+}
+
+.mobile-check {
+  font-weight: bold;
+  color: #2ecc71;
+}
+.mobile-box p {
+    margin-bottom: 0.2rem !important;
+}
+.mobile-box .d-flex p {
+    margin-bottom: 0.2rem !important;
+}
+
+
+/* List */
+.mobile-list {
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-list li {
+  font-size: 14px;
+  padding: 5px 0;
+  color: #333;
+}
+
+/* Progress Bar */
+.mobile-progress-title {
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-success {
+  color: #1abc9c;
+}
+
+.progress-danger {
+  color: var(--text-danger);
+}
+
+.mobile-progress {
+  width: 100%;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.mobile-progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.6s ease-in-out;
+}
+
+.success {
+  background-color: #1abc9c;
+}
+
+.danger {
+  background-color: var(--text-danger);
+}
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .mobile-container {
+    display: none !important;
+  }
+  .desktop-view {
+    display: block !important;
+  }
+  .custom-join-img2 {
+    margin-left: 0px;
+    margin-top: -40px;
+    height: 300px;
+    width: 250px;
+  }
+  .ps-lg-4 {
+    padding-left: 1.5rem !important;
+     padding-bottom: 2rem;
+  }
+  .button-font-tab{
+    font-size: 8px;
+  }
+  .btn .fa-arrow-right {
+        display: none;
+    }
+    .lang-tab{
+      font-size: 8px;
+    }
+
+}
+@media (min-width: 1441px) and (max-width: 3840px) {
+  .mobile-container {
+    display: none !important;
+  }
+  .desktop-view {
+    display: block !important;
+  }
+   .mobile-benefits {
+    display: none !important;
+  }
+  .desktop-benefits {
+    display: block !important;
+  }
+}
